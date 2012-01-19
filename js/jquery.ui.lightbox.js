@@ -38,8 +38,10 @@
           that.options.data.element_id = $(this).attr('id').split('_')[1];
         }
         that.options.beforeLoad(this, that);
-        if ($(this).attr('href').length !== 0 && !that.options.action) {
-          that.options.action = $(this).attr('href');
+        if ($(this).attr('href') !== void 0 && !that.options.action) {
+          if ($(this).attr('href').length > 1) {
+            that.options.action = $(this).attr('href');
+          }
         }
         that._load();
         return false;
