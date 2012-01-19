@@ -62,7 +62,8 @@
             that.options.afterLoad(that);
             return that._initBox();
           },
-          dataType: that.options.method
+          dataType: "json",
+          type: that.options.method
         });
       }
     },

@@ -1,6 +1,6 @@
  # lightbox
  #
- # :copyright: 2011, Marten Klitzke <m.klitze@gmail.com>
+ # :copyright: 2012, Marten Klitzke <m.klitze@gmail.com>
  # :license: GPL
  #
 $.widget 'ui.lightbox',
@@ -82,7 +82,8 @@ $.widget 'ui.lightbox',
           #init lightbox
           that._initBox()
 
-        dataType: that.options.method
+        dataType: "json"
+        type: that.options.method
 
   _initBox: ->
     that = @
