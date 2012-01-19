@@ -1,0 +1,14 @@
+jQuery Lightbox widget
+
+Options:
+ - boxId: id for lightbox element
+ - closeButtonId: id for close button
+ - wrapperId: id for wrapper in which the lightbox is loaded
+ - bgId: id for background box
+ - action: action for ajax call
+ - drag: should lightbox be draggable?
+ - data: data for ajax call
+ - method: method for ajax call
+ - beforeLoad: callback for events before lightbox is loaded
+ - afterLoad: callback for events after lightbox is loaded
+ - afterClose: callback for events after lightbox is closed
