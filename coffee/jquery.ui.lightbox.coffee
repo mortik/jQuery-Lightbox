@@ -47,8 +47,9 @@ $.widget 'ui.lightbox',
       that.options.beforeLoad @, that
 
       #get action from href if action isn't allready set via options
-      if $(@).attr('href').length isnt 0 && !that.options.action
-        that.options.action = $(@).attr 'href'
+      if $(@).attr('href') isnt undefined && !that.options.action
+        if $(@).attr('href').length > 1
+          that.options.action = $(@).attr 'href'
 
       #load lightbox
       that._load()
